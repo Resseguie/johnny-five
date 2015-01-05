@@ -68,9 +68,15 @@ exports["Temperature -- LM35"] = {
     this.clock.tick(100);
 
     test.ok(spy.calledOnce);
+<<<<<<< HEAD
     test.equals(Math.round(spy.args[0][1].celsius), 49);
     test.equals(Math.round(spy.args[0][1].fahrenheit), 120);
     test.equals(Math.round(spy.args[0][1].kelvin), 322);
+=======
+    test.equals(Math.round(spy.getCall(0).args[0].celsius), 49);
+    test.equals(Math.round(spy.getCall(0).args[0].fahrenheit), 120);
+    test.equals(Math.round(spy.getCall(0).args[0].kelvin), 322);
+>>>>>>> Remove bogus `null` arguments from emitters. Fixes gh-561
 
     test.done();
   },
@@ -140,9 +146,15 @@ exports["Temperature -- TMP36"] = {
     this.clock.tick(100);
 
     test.ok(spy.calledOnce);
+<<<<<<< HEAD
     test.equals(Math.round(spy.args[0][1].celsius), 23);
     test.equals(Math.round(spy.args[0][1].fahrenheit), 74);
     test.equals(Math.round(spy.args[0][1].kelvin), 296);
+=======
+    test.equals(Math.round(spy.getCall(0).args[0].celsius), 23);
+    test.equals(Math.round(spy.getCall(0).args[0].fahrenheit), 74);
+    test.equals(Math.round(spy.getCall(0).args[0].kelvin), 296);
+>>>>>>> Remove bogus `null` arguments from emitters. Fixes gh-561
 
     test.done();
   }
@@ -245,9 +257,9 @@ exports["Temperature -- DS18B20"] = {
 
     this.clock.tick(100);
 
-    test.equals(Math.round(spy.args[0][1].celsius), 32);
-    test.equals(Math.round(spy.args[0][1].fahrenheit), 90);
-    test.equals(Math.round(spy.args[0][1].kelvin), 305);
+    test.equals(Math.round(spy.getCall(0).args[0].celsius), 32);
+    test.equals(Math.round(spy.getCall(0).args[0].fahrenheit), 90);
+    test.equals(Math.round(spy.getCall(0).args[0].kelvin), 305);
 
     test.done();
   },
@@ -323,9 +335,15 @@ exports["Temperature -- MPU6050"] = {
     this.clock.tick(100);
 
     test.ok(spy.calledOnce);
+<<<<<<< HEAD
     test.equals(Math.round(spy.args[0][1].celsius), 49);
     test.equals(Math.round(spy.args[0][1].fahrenheit), 121);
     test.equals(Math.round(spy.args[0][1].kelvin), 323);
+=======
+    test.equals(Math.round(spy.getCall(0).args[0].celsius), 49);
+    test.equals(Math.round(spy.getCall(0).args[0].fahrenheit), 121);
+    test.equals(Math.round(spy.getCall(0).args[0].kelvin), 323);
+>>>>>>> Remove bogus `null` arguments from emitters. Fixes gh-561
 
     test.done();
   }
@@ -367,9 +385,15 @@ exports["Temperature -- ANALOG"] = {
     this.clock.tick(100);
 
     test.ok(spy.calledOnce);
+<<<<<<< HEAD
     test.equals(Math.round(spy.args[0][1].celsius), 50);
     test.equals(Math.round(spy.args[0][1].fahrenheit), 122);
     test.equals(Math.round(spy.args[0][1].kelvin), 323);
+=======
+    test.equals(Math.round(spy.getCall(0).args[0].celsius), 50);
+    test.equals(Math.round(spy.getCall(0).args[0].fahrenheit), 122);
+    test.equals(Math.round(spy.getCall(0).args[0].kelvin), 323);
+>>>>>>> Remove bogus `null` arguments from emitters. Fixes gh-561
 
     test.done();
   },
@@ -388,9 +412,15 @@ exports["Temperature -- ANALOG"] = {
     this.clock.tick(100);
 
     test.ok(spy.calledOnce);
+<<<<<<< HEAD
     test.equals(Math.round(spy.args[0][1].celsius), 22);
     test.equals(Math.round(spy.args[0][1].fahrenheit), 72);
     test.equals(Math.round(spy.args[0][1].kelvin), 295);
+=======
+    test.equals(Math.round(spy.getCall(0).args[0].celsius), 22);
+    test.equals(Math.round(spy.getCall(0).args[0].fahrenheit), 72);
+    test.equals(Math.round(spy.getCall(0).args[0].kelvin), 295);
+>>>>>>> Remove bogus `null` arguments from emitters. Fixes gh-561
 
     test.done();
   }
@@ -431,6 +461,7 @@ exports["Temperature -- GROVE"] = {
     this.clock.tick(100);
 
     test.ok(spy.calledOnce);
+<<<<<<< HEAD
     test.equals(Math.round(spy.args[0][1].celsius), 39);
     test.equals(Math.round(spy.args[0][1].fahrenheit), 102);
     test.equals(Math.round(spy.args[0][1].kelvin), 312);
@@ -477,6 +508,11 @@ exports["Temperature -- TINKERKIT"] = {
     test.equals(Math.round(spy.args[0][1].celsius), 39);
     test.equals(Math.round(spy.args[0][1].fahrenheit), 102);
     test.equals(Math.round(spy.args[0][1].kelvin), 312);
+=======
+    test.equals(Math.round(spy.getCall(0).args[0].celsius), 23);
+    test.equals(Math.round(spy.getCall(0).args[0].fahrenheit), 74);
+    test.equals(Math.round(spy.getCall(0).args[0].kelvin), 296);
+>>>>>>> Remove bogus `null` arguments from emitters. Fixes gh-561
 
     test.done();
   }
